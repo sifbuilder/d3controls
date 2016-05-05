@@ -1,0 +1,33 @@
+{
+  "name": "d3controls",
+  "version": "1.0.0",
+  "description": "d3v4 drag controls example",
+  "main": "d3example.js",
+	"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress --verbose --colors --display-error-details --config ./webpack.config.js",
+		"dev": "webpack-dev-server --entry=d3example -d --output-pathinfo --verbose --display-error-details  --progress --config ./webpack.config.js",
+		"man": "echo \"webpack [--entrysrc=<d3example>] [--datasrc=<flare>]  -d --output-pathinfo --verbose --display-error-details  --progress --config ./webpack.config.js\" && exit 1",
+		"d3example": "webpack --entry=d3example -d --output-pathinfo --verbose --display-error-details  --progress --config ./webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "d3controls"
+  },
+  "keywords": [
+    "d3",
+    "javascript",
+    "dragcontrol"
+  ],
+  "author": "sifbuilder based on mike bostock",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^2.10.0",
+    "css-loader": "^0.23.1",
+    "dsv-loader": "^1.0.3",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.14",
+    "yargs": "^4.3.1"
+  }
+}
